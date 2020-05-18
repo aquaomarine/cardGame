@@ -1,0 +1,41 @@
+{
+    "name": "cardgame",
+    "description": "",
+    "version": "1.0.0",
+    "author": "Rajene Harris <rajeneharris@hotmail.com>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aquaomarine/cardgame.git"
+    },
+    "bugs": "http://github.com/aquaomarine/cardgame/issues",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "dependencies": {
+        "body-parser": "^1.15.0",
+        "express": "^4.0.0",
+        "swaggerize-express": "^4.0.0",
+        "swaggerize-ui": "^1.0.1",
+        "swagmock": "~0.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^2",
+        "is-my-json-valid": "^2.13.1",
+        "istanbul": "~0.4.3",
+        "js-yaml": "^3.2.6",
+        "supertest": "^4.0.2",
+        "swagger-parser": "^3.4.1",
+        "tape": "^4"
+    },
+    "scripts": {
+        "test": "tape 'tests/**/*.js'",
+        "cover": "istanbul cover tape -- 'tests/**/*.js'",
+        "lint": "eslint .",
+        "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'"
+    },
+    "generator-swaggerize": {
+        "version": "4.1.0"
+    },
+    "main": "./server"
+}

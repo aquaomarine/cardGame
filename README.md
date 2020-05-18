@@ -1,2 +1,3 @@
-# cardGame
-Worked on building Microsofts flip card game.
+# cardgame
+
+Swagger api [location](./config/swagger.json)
